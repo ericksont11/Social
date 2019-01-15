@@ -40,7 +40,7 @@ p {
     width: 18.33%;
     font-size:.75em;
     color: mediumseagreen;
-    text-emphasis: bolder;
+    font-weight: bold;
 }
 
 
@@ -243,17 +243,18 @@ a {
         float: left;
         margin-top: 70vh;
         margin-bottom:15vh;
-        width: 23.33%;
+        width: 23.33vw;
         font-size:.75em;
     }
     
     input {
-        width: 23.1%;
+        width: 23.1vw;
         float: left;
         margin-top: 70vh;
         margin-bottom:15vh;
         text-align:center;
         font-size:.75em;
+        font-weight: bold;
     }
     
     #range {
