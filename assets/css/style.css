@@ -248,7 +248,7 @@ a {
     }
     
     input {
-        width: 23.1vw;
+        width: 23.1;
         float: left;
         margin-top: 70vh;
         margin-bottom:15vh;
@@ -429,7 +429,7 @@ a {
     #range {
         clear:left;
         margin-left:0%;
-        width:34%;
+        width:33%;
     }
 
     #initial-box {
