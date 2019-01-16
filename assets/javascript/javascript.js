@@ -132,6 +132,7 @@ function findEvents() {
             div.style.textAlign= "center";
             div.style.marginTop= "12vh";
             div.style.display= "none";
+            div.style.overflow= "hidden";
             
             //create elements to hold maps, photos, and event descriptions
             var frame = document.createElement("iframe");
@@ -288,7 +289,7 @@ function findEvents() {
                     document.getElementById("type-sports").style.float ="right";
                     document.getElementById("type-sports").style.backgroundColor = "lightcoral";
                     document.getElementById("type-sports").style.height = "12vh";
-                    document.getElementById("type-sports").style.marginTop = "10vh";
+                    document.getElementById("type-sports").style.marginTop = "8vh";
                     document.getElementById("type-sports").style.width = "10vw";
                     document.getElementById("type-sports").style.postion= "fixed";
                     document.getElementById("type-sports").innerHTML = "SPORTS";
