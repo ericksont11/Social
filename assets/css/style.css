@@ -416,6 +416,7 @@ a {
         margin-bottom:15vh;
         width: 32%;
         font-size:.75em;
+        height:5vh;
         z-index:200;
 
     }
@@ -429,6 +430,7 @@ a {
         text-align:center;
         font-size:.75em;
         z-index:200;
+        height:5vh;
     }
     
     #range {

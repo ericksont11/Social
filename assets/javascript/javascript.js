@@ -287,9 +287,10 @@ function findEvents() {
 
                     document.getElementById("type-sports").style.float ="right";
                     document.getElementById("type-sports").style.backgroundColor = "lightcoral";
-                    document.getElementById("type-sports").style.height = "19vh";
+                    document.getElementById("type-sports").style.height = "14vh";
                     document.getElementById("type-sports").style.width = "10vw";
-                    document.getElementById("type-sports").style.postion= "relative";
+                    document.getElementById("type-sports").style.postion= "absolute";
+                    document.getElementById("type-sports").style.bottom= 0;
                     document.getElementById("type-sports").innerHTML = "SPORTS";
                     document.getElementById("type-sports").style.opacity = ".4";
                     document.getElementById("type-sports").style.fontSize = "1em";
