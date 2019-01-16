@@ -9,7 +9,9 @@ fieldset, legend {
     width:100%;
     height:100%;
 }
-
+html {
+    height: 100vh;
+}
 body {
     height: 100vh;
     background-color: slategray;

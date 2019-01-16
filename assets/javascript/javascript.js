@@ -850,8 +850,8 @@ function resize(){
         for (i = 0; i < trackerArray.length; i++) {
 
             document.getElementById("content-box" + trackerArray[i]).style.marginTop = "18vh"
-            document.getElementById("content-box" + trackerArray[i]).style.left = "20%"
-            document.getElementById("content-box" + trackerArray[i]).style.width = "60vw"
+            document.getElementById("content-box" + trackerArray[i]).style.left = "19.5%"
+            document.getElementById("content-box" + trackerArray[i]).style.width = "61vw"
             
             if(trackerTypeArray[i] === "SPORTS") {
                 document.getElementById("type-sports").style.width = "20vw";
