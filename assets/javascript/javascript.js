@@ -222,9 +222,6 @@ function findEvents() {
             
             //style the elements on the page to account for the new divs
 
-            document.getElementById("range").style.marginTop= "59vh";
-            document.getElementById("date").style.marginTop= "59vh";
-            document.getElementById("clicker").style.marginTop = "59vh";
             document.getElementById("initial-box").style.display= "none";
             document.getElementById("search-box").style.display= "none";
             document.getElementById("content-box" +i).style.display = "block";
@@ -902,6 +899,9 @@ function resize(){
         var left;
         for (i = 0; i < trackerArray.length; i++) {
 
+            document.getElementById("range").style.marginTop= "70vh";
+            document.getElementById("date").style.marginTop= "70vh";
+            document.getElementById("clicker").style.marginTop = "70vh";
             document.getElementById("content-box" + trackerArray[i]).style.marginTop = "18vh"
             document.getElementById("content-box" + trackerArray[i]).style.left = "19.5%"
             document.getElementById("content-box" + trackerArray[i]).style.width = "61vw"
@@ -984,6 +984,9 @@ function resize(){
     if(window.innerWidth > window.innerHeight) {
         for (i = 0; i < trackerArray.length; i++) {
             document.getElementById("content-box" + trackerArray[i]).style.marginTop = "12vh"
+            document.getElementById("range").style.marginTop= "59vh";
+            document.getElementById("date").style.marginTop= "59vh";
+            document.getElementById("clicker").style.marginTop = "59vh";
         }
     }
     if (y === 4) {
