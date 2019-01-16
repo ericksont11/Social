@@ -414,7 +414,7 @@ a {
         margin-top: 70vh;
         margin-bottom:15vh;
         width: 32%;
-        font-size:.2em;
+        font-size:.4em;
         height: 6vh;
     }
     
@@ -424,8 +424,7 @@ a {
         margin-top: 70vh;
         margin-bottom:15vh;
         text-align:center;
-        font-size:.2em;
-        height: 5vh;
+        font-size:.4em;
     }
     
     #range {
