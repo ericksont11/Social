@@ -222,9 +222,9 @@ function findEvents() {
             
             //style the elements on the page to account for the new divs
 
-            document.getElementById("range").style.marginTop= "70vh";
-            document.getElementById("date").style.marginTop= "70vh";
-            document.getElementById("clicker").style.marginTop = "70vh";
+            document.getElementById("range").style.marginTop= "59vh";
+            document.getElementById("date").style.marginTop= "59vh";
+            document.getElementById("clicker").style.marginTop = "59vh";
             document.getElementById("initial-box").style.display= "none";
             document.getElementById("search-box").style.display= "none";
             document.getElementById("content-box" +i).style.display = "block";
