@@ -414,8 +414,8 @@ a {
         margin-top: 70vh;
         margin-bottom:15vh;
         width: 32%;
-        font-size:.4em;
-        height: 6vh;
+        font-size:.75em;
+
     }
     
     input {
@@ -424,7 +424,7 @@ a {
         margin-top: 70vh;
         margin-bottom:15vh;
         text-align:center;
-        font-size:.4em;
+        font-size:.75em;
     }
     
     #range {
