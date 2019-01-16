@@ -288,8 +288,9 @@ function findEvents() {
                     document.getElementById("type-sports").style.float ="right";
                     document.getElementById("type-sports").style.backgroundColor = "lightcoral";
                     document.getElementById("type-sports").style.height = "10vh";
+                    document.getElementById("type-sports").style.marginTop = "10vh";
                     document.getElementById("type-sports").style.width = "10vw";
-                    document.getElementById("type-sports").style.postion= "relative";
+                    document.getElementById("type-sports").style.postion= "fixed";
                     document.getElementById("type-sports").innerHTML = "SPORTS";
                     document.getElementById("type-sports").style.opacity = ".4";
                     document.getElementById("type-sports").style.fontSize = "1em";
@@ -849,8 +850,8 @@ function resize(){
         for (i = 0; i < trackerArray.length; i++) {
 
             document.getElementById("content-box" + trackerArray[i]).style.marginTop = "18vh"
-            document.getElementById("content-box" + trackerArray[i]).style.left = "20%"
-            document.getElementById("content-box" + trackerArray[i]).style.width = "60vw"
+            document.getElementById("content-box" + trackerArray[i]).style.left = "25%"
+            document.getElementById("content-box" + trackerArray[i]).style.width = "50vw"
             
             if(trackerTypeArray[i] === "SPORTS") {
                 document.getElementById("type-sports").style.width = "20vw";
