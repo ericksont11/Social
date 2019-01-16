@@ -37,7 +37,7 @@ var events = [
     ["Board Game Night","East Coast Gaming","GAMES","01/24/2019"],
     ["Ravnica Allegiance Prerelease","East Coast Gaming","GAMES","01/19/2019"],
     ["Ravnica Allegiance Prerelease","East Coast Gaming","GAMES","01/20/2019"],
-    ["Duke Basketball (vs Virginia)","Cameron Indoor Stadium","Sports","01/16/2019"]
+    ["Duke Basketball (vs Virginia)","Cameron Indoor Stadium","SPORTS","01/16/2019"]
   ];
 var imagearray = ["assets/images/chess.jpg", "assets/images/music.jpg", "assets/images/sports.jpg", "assets/images/art.jpg", "assets/images/science.jpg"]
 var distance = 15;
