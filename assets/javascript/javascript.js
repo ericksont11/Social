@@ -1,12 +1,43 @@
 //arrays that hold the event information, image information, the google map location sources, and the available categories respectively
 
 var events = [
-    ["90's Karaoke","Proof Five Points","MUSIC","01/16/2019"],
-    ["Local Band Local Beer","Cary Pub","MUSIC","01/16/2019"],
-    ["Kate Rhudy w/ Libby Rodenbough","WakeMed Soccer Park","MUSIC","01/16/2019"],
-    ["Lowbrow w/ Steamroom Etiquette","Raleigh Convention Center","MUSIC","01/16/2019"],
-    ["Day Party: John Howie, Jr & the Rosewood Bluff","Cameron Indoor Stadium","MUSIC","01/16/2019"],
-    ["Trivia","Cary Pub","GAMES","01/16/2019"]
+    ["Seth Rosenbloom","The Pour House","MUSIC","01/16/2019"],
+    ["Louis York & the Shindellas","The Pour House","MUSIC","01/18/2019"],
+    ["Tom Waits Tribute Band","The Pour House","MUSIC","01/19/2019"],
+    ["Lincoln Durham","The Pour House","MUSIC","01/20/2019"],
+    ["Josh Christina w/Hawkins King","The Pour House","MUSIC","01/21/2019"],
+    ["Trivia Night","Cary Pub","GAMES","01/16/2019"],
+    ["Trivia Night","Cary Pub","GAMES","01/23/2019"],
+    ["Trivia Night","Cary Pub","GAMES","01/30/2019"],
+    ["Trivia Night","Cary Pub","GAMES","02/06/2019"],
+    ["Trivia Night","Cary Pub","GAMES","02/13/2019"],
+    ["Trivia Night","Cary Pub","GAMES","02/20/2019"],
+    ["Trivia Night","Cary Pub","GAMES","02/27/2019"],
+    ["Trivia Night","Cary Pub","GAMES","03/06/2019"],
+    ["Trivia Night","Cary Pub","GAMES","03/13/2019"],
+    ["Trivia Night","Cary Pub","GAMES","03/20/2019"],
+    ["Trivia Night","Cary Pub","GAMES","03/27/2019"],
+    ["Family Feud Night","Cary Pub","GAMES","01/22/2019"],
+    ["Family Feud Night","Cary Pub","GAMES","01/29/2019"],
+    ["Family Feud Night","Cary Pub","GAMES","02/05/2019"],
+    ["Family Feud Night","Cary Pub","GAMES","02/12/2019"],
+    ["Family Feud Night","Cary Pub","GAMES","02/19/2019"],
+    ["Family Feud Night","Cary Pub","GAMES","02/26/2019"],
+    ["Karaoke for the 99 & 2000's","Proof Five Points","MUSIC","01/16/2019"],
+    ["Karaoke for the 99 & 2000's","Proof Five Points","MUSIC","01/23/2019"],
+    ["Boat Show","Raleigh Convention Center","SCIENCE","01/16/2019"],
+    ["Boat Show","Raleigh Convention Center","SCIENCE","02/09/2019"],
+    ["Boat Show","Raleigh Convention Center","SCIENCE","02/10/2019"],
+    ["Raleigh Home Show","Raleigh Convention Center","ART","02/15/2019"],
+    ["Raleigh Home Show","Raleigh Convention Center","ART","01/16/2019"],
+    ["Raleigh Home Show","Raleigh Convention Center","ART","02/17/2019"],
+    ["MLK Dreamfest Concert","Cary Arts Center","MUSIC","01/18/2019"],
+    ["MLK Dreamfest Concert","Cary Arts Center","MUSIC","01/19/2019"],
+    ["Board Game Night","East Coast Gaming","GAMES","01/17/2019"],
+    ["Board Game Night","East Coast Gaming","GAMES","01/24/2019"],
+    ["Ravnica Allegiance Prerelease","East Coast Gaming","GAMES","01/19/2019"],
+    ["Ravnica Allegiance Prerelease","East Coast Gaming","GAMES","01/20/2019"],
+    ["Duke Basketball (vs Virginia)","Cameron Indoor Stadium","Sports","01/16/2019"]
   ];
 var imagearray = ["assets/images/chess.jpg", "assets/images/music.jpg", "assets/images/sports.jpg", "assets/images/art.jpg", "assets/images/science.jpg"]
 var distance = 15;
@@ -96,6 +127,8 @@ var dd = today.getDate();
 var mm = today.getMonth()+1;
 var yyyy = today.getFullYear();
 
+console.log(yyyy)
+
 //sets the day equal to today's date
 
 if(dd<10) {
@@ -155,6 +188,8 @@ function getDistanceFromLatLonInMiles(lat1, long1, lat2, long2) {
 function deg2rad(deg) {
     return deg * (Math.PI/180)
 }
+
+console.log(events)
 
 //function that finds events based on users specs
 
@@ -977,8 +1012,6 @@ function resize(){
                 }
             }
         }
-        console.log(left);
-        console.log(y);
     
     }
     if(window.innerWidth > window.innerHeight) {
