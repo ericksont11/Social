@@ -288,8 +288,8 @@ function findEvents() {
 
                     document.getElementById("type-sports").style.float ="right";
                     document.getElementById("type-sports").style.backgroundColor = "lightcoral";
-                    document.getElementById("type-sports").style.height = "12vh";
-                    document.getElementById("type-sports").style.marginTop = "8vh";
+                    document.getElementById("type-sports").style.height = "10vh";
+                    document.getElementById("type-sports").style.marginTop = "10vh";
                     document.getElementById("type-sports").style.width = "10vw";
                     document.getElementById("type-sports").style.postion= "fixed";
                     document.getElementById("type-sports").innerHTML = "SPORTS";
@@ -940,6 +940,11 @@ function resize(){
     if (y === 1) {
         document.getElementById(left).style.marginLeft = "40vw";
     }
+
+    if(window.innerHeight > window.innerWidth){
+        document.getElementById("type-sports").style.marginTop = "15vh";
+    }
+
 }
 window.onload=window.onresize=resize;
 
