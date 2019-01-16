@@ -183,7 +183,7 @@ function findEvents() {
 
                     document.getElementById("type-games").style.float = "right";
                     document.getElementById("type-games").style.backgroundColor = "plum";
-                    document.getElementById("type-games").style.height = "10vh";
+                    document.getElementById("type-games").style.height = "12vh";
                     document.getElementById("type-games").style.width = "10vw";
                     document.getElementById("type-games").innerHTML = "GAMES";
                     document.getElementById("type-games").style.position = "relative";
@@ -239,7 +239,7 @@ function findEvents() {
 
                     document.getElementById("type-music").style.float ="right";
                     document.getElementById("type-music").style.backgroundColor = "mediumaquamarine";
-                    document.getElementById("type-music").style.height = "10vh";
+                    document.getElementById("type-music").style.height = "12vh";
                     document.getElementById("type-music").style.width = "10vw";
                     document.getElementById("type-music").style.postion= "relative";
                     document.getElementById("type-music").innerHTML = "MUSIC";
@@ -292,7 +292,7 @@ function findEvents() {
 
                     document.getElementById("type-sports").style.float ="right";
                     document.getElementById("type-sports").style.backgroundColor = "lightcoral";
-                    document.getElementById("type-sports").style.height = "10vh";
+                    document.getElementById("type-sports").style.height = "12vh";
                     document.getElementById("type-sports").style.width = "10vw";
                     document.getElementById("type-sports").style.postion= "fixed";
                     document.getElementById("type-sports").innerHTML = "SPORTS";
@@ -345,7 +345,7 @@ function findEvents() {
 
                     document.getElementById("type-art").style.float ="right";
                     document.getElementById("type-art").style.backgroundColor = "#2668a5";
-                    document.getElementById("type-art").style.height = "10vh";
+                    document.getElementById("type-art").style.height = "12vh";
                     document.getElementById("type-art").style.width = "10vw";
                     document.getElementById("type-art").style.postion= "relative";
                     document.getElementById("type-art").innerHTML = "ART";
@@ -398,7 +398,7 @@ function findEvents() {
 
                     document.getElementById("type-science").style.float ="right";
                     document.getElementById("type-science").style.backgroundColor = "lightsalmon";
-                    document.getElementById("type-science").style.height = "10vh";
+                    document.getElementById("type-science").style.height = "12vh";
                     document.getElementById("type-science").style.width = "10vw";
                     document.getElementById("type-science").style.postion= "relative";
                     document.getElementById("type-science").innerHTML = "SCIENCE";
@@ -944,13 +944,6 @@ function resize(){
     }
     if (y === 1) {
         document.getElementById(left).style.marginLeft = "40vw";
-    }
-
-    if(window.innerHeight < window.innerWidth){
-        document.getElementById("type-sports").style.marginTop = "20vh";
-    }
-    else if (window.innerHeight > window.innerWidth){
-        document.getElementById("type-sports").style.marginTop = "0vh";
     }
 }
 window.onload=window.onresize=resize;
