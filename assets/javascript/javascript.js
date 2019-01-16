@@ -172,6 +172,8 @@ function findEvents() {
                     var type = document.createElement("p");
                     document.getElementById("categories").appendChild(type);
                     type.id ="type-games";
+                    type.classList.add("center");
+
 
                     // links to the function at the bottom of page
                     var onClickCommand = categoryGames;
@@ -229,6 +231,7 @@ function findEvents() {
                     var type = document.createElement("p");
                     document.getElementById("categories").appendChild(type);
                     type.id ="type-music";
+                    type.classList.add("center");
 
                     // links to the function at the bottom of page
                     var onClickCommand = categoryMusic;
@@ -281,6 +284,7 @@ function findEvents() {
                     var type = document.createElement("p");
                     document.getElementById("categories").appendChild(type);
                     type.id ="type-sports";
+                    type.classList.add("center");
 
                     // links to the function at the bottom of page
                     var onClickCommand = categorySports;
@@ -333,6 +337,7 @@ function findEvents() {
                     var type = document.createElement("p");
                     document.getElementById("categories").appendChild(type);
                     type.id ="type-art";
+                    type.classList.add("center");
 
                     // links to the function at the bottom of page
                     var onClickCommand = categoryArt;
@@ -385,6 +390,7 @@ function findEvents() {
                     var type = document.createElement("p");
                     document.getElementById("categories").appendChild(type);
                     type.id ="type-science";
+                    type.classList.add("center");
 
                     // links to the function at the bottom of page
                     var onClickCommand = categoryScience;
@@ -940,10 +946,12 @@ function resize(){
         document.getElementById(left).style.marginLeft = "40vw";
     }
 
-    if(window.innerHeight > window.innerWidth){
+    if(window.innerHeight < window.innerWidth){
         document.getElementById("type-sports").style.marginTop = "20vh";
     }
-
+    else if (window.innerHeight > window.innerWidth){
+        document.getElementById("type-sports").style.marginTop = "0vh";
+    }
 }
 window.onload=window.onresize=resize;
 
