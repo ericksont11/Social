@@ -1,6 +1,6 @@
 //arrays that hold the event information, image information, the google map location sources, and the available categories respectively
 
-var events = [[35.8033,-78.7218, "Justin Timberlake Concert", "PNC Arena", "GAMES", "01/04/2019"],[35.7735, -78.6414, "Triangle Chess Tournament", "the Raleigh Convention Center", "ART", "01/04/2019"],[35.9972, -78.9424, "Duke Basketball game vs Florida", "Cameron Indoor Stadium", "SPORTS","01/04/2019"],[35.7868, -78.7559, "Mutts and Marshmellows 5k Race", "WakeMed Soccer Park", "SPORTS","01/04/2019"],[35.7828, -78.7813, "A Mo-town Christmas", "Cary Arts Center", "MUSIC", "01/04/2019"],[35.7824, -78.6414, "New Year's Science Celebration", "Daley Planet Cafe", "ART", "01/04/2019"],[35.8104, -78.7021, "The Beyond: Georgia O'Keefe Exhibit", "NC Museum of Art", "SPORTS", "01/04/2019"],[35.8032,-78.6457,"90's Karaoke","Proof Five Points","ART","01/04/2019"],[35.7772,-78.6368,"Local Band Local Beer","The Pour House","SCIENCE","01/04/2019"],[35.7772,-78.6368,"Kate Rhudy w/ Libby Rodenbough","The Pour House","MUSIC","01/04/2019"],[35.7772,-78.6368,"Lowbrow w/ Steamroom Etiquette","The Pour House","MUSIC","01/04/2019"],[35.7772,-78.6368,"Day Party: John Howie, Jr & the Rosewood Bluff","The Pour House","MUSIC","01/04/2019"]];
+var events = [[35.8033,-78.7218, "Justin Timberlake Concert", "PNC Arena", "GAMES", "01/16/2019"],[35.7735, -78.6414, "Triangle Chess Tournament", "the Raleigh Convention Center", "ART", "01/16/2019"],[35.9972, -78.9424, "Duke Basketball game vs Florida", "Cameron Indoor Stadium", "SPORTS","01/16/2019"],[35.7868, -78.7559, "Mutts and Marshmellows 5k Race", "WakeMed Soccer Park", "SPORTS","01/16/2019"],[35.7828, -78.7813, "A Mo-town Christmas", "Cary Arts Center", "MUSIC", "01/16/2019"],[35.7824, -78.6414, "New Year's Science Celebration", "Daley Planet Cafe", "ART", "01/16/2019"],[35.8104, -78.7021, "The Beyond: Georgia O'Keefe Exhibit", "NC Museum of Art", "SPORTS", "01/16/2019"],[35.8032,-78.6457,"90's Karaoke","Proof Five Points","ART","01/16/2019"],[35.7772,-78.6368,"Local Band Local Beer","The Pour House","SCIENCE","01/16/2019"],[35.7772,-78.6368,"Kate Rhudy w/ Libby Rodenbough","The Pour House","MUSIC","01/16/2019"],[35.7772,-78.6368,"Lowbrow w/ Steamroom Etiquette","The Pour House","MUSIC","01/16/2019"],[35.7772,-78.6368,"Day Party: John Howie, Jr & the Rosewood Bluff","The Pour House","MUSIC","01/16/2019"]];
 var imagearray = ["assets/images/chess.jpg", "assets/images/music.jpg", "assets/images/sports.jpg", "assets/images/art.jpg", "assets/images/science.jpg"]
 var maparray = ["https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.8612528296944!2d-78.72398328478059!3d35.80333938016606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acf43c4ba07d07%3A0x1bd2c17205f104d1!2sPNC+Arena!5e0!3m2!1sen!2sus!4v1546029504309","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.926980529048!2d-78.63899468478134!3d35.77716998017208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f7286c5dd09%3A0x78354546a2fb2b18!2sThe+Pour+House+Music+Hall!5e0!3m2!1sen!2sus!4v1546030934162","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.8675996566894!2d-78.64788358478067!3d35.80318358016595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f51d65a6829%3A0xddb344d5a0354814!2sProof+Five+Points!5e0!3m2!1sen!2sus!4v1546031329362","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.074503637232!2d-78.64361078478146!3d35.77354618017301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f715c1cea6b%3A0x6880d973431472da!2sRaleigh+Convention+Center!5e0!3m2!1sen!2sus!4v1546031396890","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.286406521515!2d-78.74495088478156!3d35.76834038017409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac8d2b7a77622f%3A0xb67f45ba91e14952!2sEast+Coast+Gaming!5e0!3m2!1sen!2sus!4v1546031441203"]
 var distance = 15;
@@ -327,7 +327,7 @@ function findEvents() {
                 document.getElementById("img" +i).src = imagearray[3];
                 var categoryType = "ART";
                 trackerTypeArray.push(categoryType);
-                document.getElementById("content-box" +i).style.backgroundColor = "khaki"
+                document.getElementById("content-box" +i).style.backgroundColor = "#2668a5"
 
                 if (art === false) {
                     var type = document.createElement("p");
@@ -339,7 +339,7 @@ function findEvents() {
                     type.onclick = onClickCommand;
 
                     document.getElementById("type-art").style.float ="right";
-                    document.getElementById("type-art").style.backgroundColor = "khaki";
+                    document.getElementById("type-art").style.backgroundColor = "#2668a5";
                     document.getElementById("type-art").style.height = "12vh";
                     document.getElementById("type-art").style.width = "10vw";
                     document.getElementById("type-art").style.postion= "relative";
@@ -435,29 +435,28 @@ function findEvents() {
             if (events[i][3] === "PNC Arena") {
                 document.getElementById("frame" +i).src = maparray[0];
                 document.getElementById("frame" +i).style.display = "block";
-                document.getElementById("frame" +i).style.width = "98.5%";
+                document.getElementById("frame" +i).style.width = "100%";
             }
             else if (events[i][3] === "The Pour House") {
                 document.getElementById("frame" +i).src = maparray[1];
                 document.getElementById("frame" +i).style.display = "block";
-                document.getElementById("frame" +i).style.width = "98.5%";
-
+                document.getElementById("frame" +i).style.width = "100%";
             }
             else if (events[i][3] === "Proof Five Points") {
                 document.getElementById("frame" +i).src = maparray[2];
                 document.getElementById("frame" +i).style.display = "block";
-                document.getElementById("frame" +i).style.width = "98.5%";
+                document.getElementById("frame" +i).style.width = "100%";
             }
             else if (events[i][3] === "the Raleigh Convention Center") {
                 document.getElementById("frame" +i).src = maparray[3];
                 document.getElementById("frame" +i).style.display = "block";
-                document.getElementById("frame" +i).style.width = "98.5%";
+                document.getElementById("frame" +i).style.width = "100%";
 
             }
             else if (events[i][3] === "East Coast Gaming") {
                 document.getElementById("frame" +i).src = maparray[4];
                 document.getElementById("frame" +i).style.display = "block";
-                document.getElementById("frame" +i).style.width = "98.5%";
+                document.getElementById("frame" +i).style.width = "100%";
             }
 
             //display the event description

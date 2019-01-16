@@ -11,6 +11,7 @@ fieldset, legend {
 }
 html {
     height: 100vh;
+    overflow: hidden;
 }
 body {
     height: 100vh;
@@ -29,8 +30,8 @@ p {
     display: none;
     text-align: center;
     color: white;
-    font-size: 2vh;
-    text-shadow: -1px 0 mediumseagreen, 0 1px mediumseagreen, 1px 0 mediumseagreen, 0 -1px mediumseagreen;
+    font-size: 2.1vh;
+    padding-top: 3vh;
 }
 
 #clicker {
@@ -182,6 +183,7 @@ iframe {
     height:35vh;
     bottom: 0;
     position: absolute;
+    border: 0;
 }
 
 a {
