@@ -180,7 +180,7 @@ function findEvents() {
 
                     document.getElementById("type-games").style.float = "right";
                     document.getElementById("type-games").style.backgroundColor = "plum";
-                    document.getElementById("type-games").style.height = "10vh";
+                    document.getElementById("type-games").style.height = "12vh";
                     document.getElementById("type-games").style.width = "10vw";
                     document.getElementById("type-games").innerHTML = "GAMES";
                     document.getElementById("type-games").style.position = "relative";
@@ -235,7 +235,7 @@ function findEvents() {
 
                     document.getElementById("type-music").style.float ="right";
                     document.getElementById("type-music").style.backgroundColor = "mediumaquamarine";
-                    document.getElementById("type-music").style.height = "10vh";
+                    document.getElementById("type-music").style.height = "12vh";
                     document.getElementById("type-music").style.width = "10vw";
                     document.getElementById("type-music").style.postion= "relative";
                     document.getElementById("type-music").innerHTML = "MUSIC";
@@ -287,7 +287,7 @@ function findEvents() {
 
                     document.getElementById("type-sports").style.float ="right";
                     document.getElementById("type-sports").style.backgroundColor = "lightcoral";
-                    document.getElementById("type-sports").style.height = "10vh";
+                    document.getElementById("type-sports").style.height = "12vh";
                     document.getElementById("type-sports").style.marginTop = "10vh";
                     document.getElementById("type-sports").style.width = "10vw";
                     document.getElementById("type-sports").style.postion= "fixed";
@@ -340,7 +340,7 @@ function findEvents() {
 
                     document.getElementById("type-art").style.float ="right";
                     document.getElementById("type-art").style.backgroundColor = "khaki";
-                    document.getElementById("type-art").style.height = "10vh";
+                    document.getElementById("type-art").style.height = "12vh";
                     document.getElementById("type-art").style.width = "10vw";
                     document.getElementById("type-art").style.postion= "relative";
                     document.getElementById("type-art").innerHTML = "ART";
@@ -392,7 +392,7 @@ function findEvents() {
 
                     document.getElementById("type-science").style.float ="right";
                     document.getElementById("type-science").style.backgroundColor = "lightsalmon";
-                    document.getElementById("type-science").style.height = "10vh";
+                    document.getElementById("type-science").style.height = "12vh";
                     document.getElementById("type-science").style.width = "10vw";
                     document.getElementById("type-science").style.postion= "relative";
                     document.getElementById("type-science").innerHTML = "SCIENCE";
@@ -850,8 +850,8 @@ function resize(){
         for (i = 0; i < trackerArray.length; i++) {
 
             document.getElementById("content-box" + trackerArray[i]).style.marginTop = "18vh"
-            document.getElementById("content-box" + trackerArray[i]).style.left = "25%"
-            document.getElementById("content-box" + trackerArray[i]).style.width = "50vw"
+            document.getElementById("content-box" + trackerArray[i]).style.left = "20%"
+            document.getElementById("content-box" + trackerArray[i]).style.width = "60vw"
             
             if(trackerTypeArray[i] === "SPORTS") {
                 document.getElementById("type-sports").style.width = "20vw";
